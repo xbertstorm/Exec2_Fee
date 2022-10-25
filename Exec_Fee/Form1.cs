@@ -89,32 +89,20 @@ namespace Exec_Fee
 			if (gender == "Male")
 			{
 				if (age <= 3)
-				{
 					return label6.Text = "╧┦ゼ笷Μ禣闹";
-				}
 				else if (age > 3 && age < 70)
-				{
 					return label6.Text = "╧┦布Μ禣";
-				}
 				else
-				{
 					return label6.Text = "╧┦才穛ρ布闹";
-				}
 			}
 			else
 			{
 				if (age <= 3)
-				{
 					return label6.Text = "┦ゼ笷Μ禣闹";
-				}
 				else if (age > 3 && age < 60)
-				{
 					return label6.Text = "┦布Μ禣";
-				}
 				else
-				{
 					return label6.Text = "┦才穛ρ布闹";
-				}
 			}
 		}
 	}
