@@ -15,6 +15,7 @@ namespace Exec_Fee
 		private void button1_Click(object sender, EventArgs e)
 		{
 			int number;
+			string gender;
 			try
 			{
 				number = SetNumber();
@@ -24,8 +25,17 @@ namespace Exec_Fee
 				MessageBox.Show(ex.Message);
 				return;
 			}
-			FeeCheck(GetGender(), number);
 
+			try
+			{
+				gender = GetGender();
+			}
+			catch (Exception ex)
+			{
+				MessageBox.Show(ex.Message);
+				return;
+			}
+			FeeCheck(gender, number);
 		}
 		private int SetNumber()
 		{
